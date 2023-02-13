@@ -1,0 +1,15 @@
+<div class="container mt-5">
+<div class="card col-9">
+    <div class="card-body">
+    <p class="justify-content-center">{{product.email}}</p>
+    <p class="justify-content-center">{{product.password}}</p>
+    <form action="/action_page.php" [formGroup]="regiterForm">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd"><br><br>
+        <button type="submit" (click)="send()">Submit</button>
+    </form>
+</div>
+</div>
+</div>
